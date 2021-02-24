@@ -1,0 +1,55 @@
+.experienceBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.experienceBar > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: #d1d1d1;
+  margin: 0 1.5rem;
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.experienceBar div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: #4cd62b;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.experienceBar span.currentExperience {
+  position: absolute;
+  top: 12px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.experienceBar:hover > div {
+  background: #dcdde0;
+}
+
+.experienceBar:hover div > div {
+  background: #4ce626;
+}
+
+.experienceBar:hover span {
+  color: #525252;
+}
+/*# sourceMappingURL=experienceBar.module.css.map */

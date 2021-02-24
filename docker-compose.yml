@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  react:
+    container_name: container_next
+    image: daniloporfirio/node14yarn1.2:1.0
+    tty: true
+    volumes: 
+      - ./:/var/www/html
+    ports:
+      - 3000:3000

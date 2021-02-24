@@ -1,0 +1,48 @@
+@import '../partials/colors';
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 1rem;
+        transition: 0.5s ease;
+    }
+
+    > div { //Primeira div da classe .experience-bar
+        flex: 1;
+        height: 4px;
+        border-radius: 4px;
+        background: $gray-linedark;
+        margin: 0 1.5rem;
+        position: relative;
+        transition: 0.5s ease
+    }
+
+    div > div { //Segunda div da classe .experience-bar
+        height: 4px;
+        border-radius: 4px;
+        background: $green;
+        transition: 0.5s ease;
+    }
+
+    span.currentExperience { //span com classe de nome .current-experience
+        position: absolute;
+        top: 12px;
+        transform: translateX(-50%);
+    }
+
+    &:hover {
+        > div {
+            background: $gray-line;
+        }
+
+        div > div {
+            background: $green-flour;
+        }
+
+        span {
+            color: $text-dark;
+        }
+    }
+}
