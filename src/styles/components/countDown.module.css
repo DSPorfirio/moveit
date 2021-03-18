@@ -23,7 +23,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: #f2f3f5;
+  background: #fff;
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
@@ -66,24 +66,30 @@
   border: 0;
   border-radius: 5px;
   background: #5965e0;
-  color: #f2f3f5;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.countDownButton:hover {
+.countDownButton:not(:disabled):hover {
   background: #4953b8;
 }
 
+.countDownButton:disabled {
+  background: #fff;
+  color: #2e384d;
+  cursor: not-allowed;
+}
+
 .countDownButtonActive {
-  background: #f2f3f5;
+  background: #fff;
   color: #2e384d;
 }
 
-.countDownButtonActive:hover {
+.countDownButtonActive:not(:disabled):hover {
   background: #e83f5b;
-  color: #f2f3f5;
+  color: #fff;
 }
 /*# sourceMappingURL=countDown.module.css.map */
